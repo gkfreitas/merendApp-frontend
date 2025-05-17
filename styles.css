@@ -1,0 +1,339 @@
+/* Reset CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header-bg {
+  background-color: #f6f6f6;
+  height: 100%;
+  width: 100%;
+}
+
+.home-bg {
+  background-color: #f6f6f6;
+  height: 100%;
+  width: 100%;
+}
+
+.header-container {
+  padding-top: 20px;
+  margin: 0px auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.header-button {
+  font-size: 16px;
+  font-weight: 400;
+  color: #03403a;
+  background-color: #a9ffe1;
+  padding: 10px 30px;
+  border-radius: 200px;
+  border: none;
+}
+
+.header-button:hover {
+  background-color: #89e1c2;
+}
+
+.header-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header-list ul {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+.header-list ul li {
+  margin: 0 10px;
+}
+
+.header-list ul li a {
+  text-decoration: none;
+  color: #03403a;
+  white-space: nowrap;
+  transition: all;
+  animation-duration: 200mx;
+}
+
+.header-list ul li a:hover {
+  color: #001e1b;
+  border-bottom: 1px solid black;
+}
+
+.header-bg {
+  background-color: #f6f6f6;
+}
+
+.logo-size {
+  width: 180px;
+  cursor: pointer;
+}
+
+.home-container {
+  max-width: 1280px;
+  margin: 0px auto;
+  padding: 60px 0;
+}
+
+.home-cards-container {
+  display: flex;
+  gap: 45px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.home-card-info {
+  background-color: #fff;
+  width: 40%;
+  padding: 36px 64px 18px 64px;
+}
+
+.home-card-info-data {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.home-card-info-data p {
+  font-size: 48px;
+  color: #03403a;
+  margin-bottom: 0;
+}
+.home-card-sub-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+  color: #03403a;
+}
+
+.home-card-sub-info p {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.home-card-sub-info span {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.home-card-info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.home-card {
+  border-radius: 10px;
+}
+
+.separator {
+  margin-top: 80px;
+  width: 290px;
+  height: 2px;
+  background-color: #03403a;
+  border-radius: 200px;
+}
+
+.main-sub-container {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.main-sub-left-part {
+  max-width: 640px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-sub-left-part h1 {
+  font-size: 48px;
+  color: #03403a;
+  font-weight: 300;
+}
+
+.main-sub-left-part p {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #151515;
+}
+
+.main-sub-buttons-container {
+  display: flex;
+  gap: 12px;
+}
+
+.main-sub-button-primary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #a9ffe1;
+  padding: 8px 16px;
+  color: #03403a;
+  border-radius: 100px;
+  border: none;
+}
+.main-sub-button-primary img {
+  width: 36px;
+}
+
+.main-sub-button-secondary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #03403a;
+  border-radius: 100px;
+  padding: 0px 30px;
+  gap: 24px;
+}
+
+.main-sub-button-secondary img {
+  width: 18px;
+}
