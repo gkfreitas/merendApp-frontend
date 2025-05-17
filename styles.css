@@ -147,7 +147,9 @@ table {
   padding-top: 20px;
   margin: 0px auto;
   max-width: 1440px;
-  width: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 .header-grid {
@@ -165,6 +167,7 @@ table {
   padding: 10px 30px;
   border-radius: 200px;
   border: none;
+  cursor: pointer;
 }
 
 .header-button:hover {
@@ -174,7 +177,7 @@ table {
 .header-list {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 20px;
 }
 
@@ -307,6 +310,7 @@ table {
 .main-sub-buttons-container {
   display: flex;
   gap: 12px;
+  cursor: pointer;
 }
 
 .main-sub-button-primary {
@@ -318,6 +322,7 @@ table {
   color: #03403a;
   border-radius: 100px;
   border: none;
+  cursor: pointer;
 }
 .main-sub-button-primary img {
   width: 36px;
@@ -332,6 +337,7 @@ table {
   border-radius: 100px;
   padding: 0px 30px;
   gap: 24px;
+  cursor: pointer;
 }
 
 .main-sub-button-secondary img {
