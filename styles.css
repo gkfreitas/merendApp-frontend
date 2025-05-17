@@ -337,3 +337,147 @@ table {
 .main-sub-button-secondary img {
   width: 18px;
 }
+
+.about-us-container {
+  display: flex;
+  justify-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  gap: 120px;
+}
+
+.about-us-info-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+}
+
+.about-us-info-container h2 {
+  font-size: 48px;
+  color: #03403a;
+}
+
+.about-us-info-container > p {
+  padding-top: 32px;
+  font-size: 16px;
+  color: #03403a;
+  font-weight: 300;
+}
+
+.about-us-info-with-icon-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+}
+
+.about-us-icon-with-text {
+  padding-top: 12px;
+  max-width: 270px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.about-us-icon-with-text p {
+  width: 100%;
+  font-size: 16px;
+  white-space: nowrap;
+  color: #03403a;
+  margin: 0 0;
+  font-weight: 300;
+}
+
+.about-us-icon-with-text-subtitle {
+  font-size: 16px;
+  color: #151515;
+  padding-top: 18px;
+  font-weight: 300;
+}
+
+.about-us-info-card {
+  margin-top: 40px;
+  display: flex;
+  background-color: #03403a;
+  border-radius: 10px;
+  padding: 20px 60px;
+  justify-content: center;
+  gap: 40px;
+}
+
+.about-us-info-card p {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 0;
+  max-width: 80px;
+}
+
+.about-us-info-card span {
+  display: block;
+  max-width: 180px;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.about-us-container-cards-wrapper {
+  max-width: 1280px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.about-us-container-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 30px 40px 10px 40px;
+  width: 32%;
+  background-color: #f6f6f6;
+  border-radius: 12px;
+}
+
+.about-us-container-cards p {
+  font-size: 48px;
+  color: #03403a;
+  margin-bottom: 0;
+}
+
+.about-us-container-cards span {
+  font-size: 18px;
+  color: #03403a;
+  font-weight: 300;
+}
+
+.company-title {
+  text-align: center;
+  font-size: 48px;
+  margin: 80px 0;
+  color: #03403a;
+}
+
+.companies-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #03403a;
+  padding: 16px 48px;
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+.company-subtitle {
+  font-size: 16px;
+  color: #03403a;
+  text-align: center;
+  margin-top: 60px;
+}
