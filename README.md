@@ -1,1 +1,1 @@
-Use o live server para iniciar o projeto.
+Use a extensao "live server" para iniciar o projeto.
