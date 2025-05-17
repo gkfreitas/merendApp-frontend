@@ -1,110 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <title>merendApp</title>
-  </head>
-  <body>
-    <header class="header-bg">
-      <div class="header-grid header-container">
-        <img src="./images/logo.png" alt="Logo" class="logo-size" />
-        <nav class="header-list">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Sobre nós</a></li>
-            <li><a href="#contact">Vantagens</a></li>
-            <li><a href="#contact">Funcionalidades</a></li>
-          </ul>
-        </nav>
-        <button class="header-button">Comece já</button>
-      </div>
-    </header>
-    <main>
-      <section id="home" class="home-bg">
-        <div class="home-container">
-          <div class="home-cards-container">
-            <img
-              src="./images/happy-kids-food.png"
-              alt="Crianças felizes pegando comida"
-              class="home-cards"
-            />
-            <div class="home-card-info home-card">
-              <div class="home-card-info-data">
-                <img
-                  src="/images/apple-icon.svg"
-                  alt="Icone de uma maça com fundo verde"
-                />
-                <p>55K+</p>
-              </div>
-              <div class="home-card-sub-info">
-                <p>Refeiçoes entregues</p>
-                <span
-                  >Alimentamos milhares de alunos todos os dias com segurança e
-                  qualidade.</span
-                >
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <title>merendApp</title>
+</head>
+
+<body>
+  <header class="header-bg">
+    <div class="header-grid header-container">
+      <img src="./images/logo.png" alt="Logo" class="logo-size" />
+      <nav class="header-list">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Sobre nós</a></li>
+          <li><a href="#contact">Vantagens</a></li>
+          <li><a href="#contact">Funcionalidades</a></li>
+        </ul>
+      </nav>
+      <button class="header-button">Comece já</button>
+    </div>
+  </header>
+  <main>
+    <section id="home" class="home-bg">
+      <div class="home-container">
+        <div class="home-cards-container">
+          <img src="./images/happy-kids-food.png" alt="Crianças felizes pegando comida" class="home-cards" />
+          <div class="home-card-info home-card">
+            <div class="home-card-info-data">
+              <img src="/images/apple-icon.svg" alt="Icone de uma maça com fundo verde" />
+              <p>55K+</p>
             </div>
-            <div class="home-card-info home-card">
-              <div class="home-card-info-data">
-                <img
-                  src="/images/dashboard-asg-icon.svg"
-                  alt="Icone de uma maça com fundo verde"
-                />
-                <p>20%</p>
-              </div>
-              <div class="home-card-sub-info">
-                <p>de reduçao de custos</p>
-                <span
-                  >Economia comprovada com uso de dados e automação na gestão de
-                  merenda.</span
-                >
-              </div>
+            <div class="home-card-sub-info">
+              <p>Refeiçoes entregues</p>
+              <span>Alimentamos milhares de alunos todos os dias com segurança e
+                qualidade.</span>
             </div>
           </div>
-          <div class="separator"></div>
-          <div class="main-sub-container">
-            <div class="main-sub-left-part">
-              <h1>Tecnologia que alimenta o futuro da educação</h1>
-              <p>
-                Com o merendApp, a gestão da alimentação escolar se torna mais
-                eficiente, econômica e inteligente.
-              </p>
-              <div class="main-sub-buttons-container">
-                <button class="main-sub-button-primary">
-                  Veja como funciona
-                  <img
-                    src="/images/up-right-arrow.svg"
-                    alt="Icone de uma seta para cima"
-                  />
-                </button>
-                <button class="main-sub-button-secondary">
-                  Teste agora
-                  <img
-                    src="/images/arrow-right.svg"
-                    alt="Icone de uma seta para a direita"
-                  />
-                </button>
-              </div>
+          <div class="home-card-info home-card">
+            <div class="home-card-info-data">
+              <img src="/images/dashboard-asg-icon.svg" alt="Icone de uma maça com fundo verde" />
+              <p>20%</p>
             </div>
-            <img src="" alt="" />
+            <div class="home-card-sub-info">
+              <p>de reduçao de custos</p>
+              <span>Economia comprovada com uso de dados e automação na gestão de
+                merenda.</span>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
-    <div class="position-relative">XUXUXUa</div>
-  </body>
-  <script src="script.js"></script>
+        <div class="separator"></div>
+        <div class="main-sub-container">
+          <div class="main-sub-left-part">
+            <h1>Tecnologia que alimenta o futuro da educação</h1>
+            <p>
+              Com o merendApp, a gestão da alimentação escolar se torna mais
+              eficiente, econômica e inteligente.
+            </p>
+            <div class="main-sub-buttons-container">
+              <button class="main-sub-button-primary">
+                Veja como funciona
+                <img src="/images/up-right-arrow.svg" alt="Icone de uma seta para cima" />
+              </button>
+              <button class="main-sub-button-secondary">
+                Teste agora
+                <img src="/images/arrow-right.svg" alt="Icone de uma seta para a direita" />
+              </button>
+            </div>
+          </div>
+          <img src="" alt="" />
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="position-relative">XUXUXUa</div>
+
+
+  <div class="form-section">
+    <div class="form-container">
+      <div class="form-header">
+
+        <div class="form-title">
+          <i class="fas fa-phone"></i>
+          <h2>Fale Conosco</h2>
+        </div>
+
+        <p>Quer saber mais sobre o nosso app, tirar dúvidas ou bater um papo sobre como podemos facilitar seu trabalho?
+          É
+          só mandar uma mensagem — a gente responde rapidinho!</p>
+      </div>
+
+      <div class="form-box">
+        <form class="form">
+          <div class="form-fields">
+            <div class="form-group">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Nome" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email profissional</label>
+              <input type="email" id="email" name="email" placeholder="Email" required />
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required />
+            </div>
+            <div class="form-group">
+              <label for="empresa">Empresa</label>
+              <input type="text" id="empresa" name="empresa" placeholder="Empresa" required />
+            </div>
+            <div class="form-group">
+              <label for="tipo">Tipo de empresa</label>
+              <select id="tipo" name="tipo" required>
+                <option value="" id="company-type" disabled selected>Tipo de empresa</option>
+                <option value="escola">Escola</option>
+                <option value="distribuidor">Distribuidor</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..." rows="4"
+                required></textarea>
+            </div>
+          </div>
+
+          <div class="form-submit">
+            <button class="form-button" type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="customModal" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close-button">&times;</span>
+      <h2>Mensagem Enviada</h2>
+      <div id="customModalBody"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+
+      <img src="images/merendapp.svg" alt="" id="logo">
+      <div class="col mb-3"></div>
+      <div class="col mb-3">
+        <h5>Menu</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sobre nos</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Vantagens</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Funcionalidades</a></li>
+        </ul>
+      </div>
+      <div class="col mb-3">
+        <h5>Social</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Instagram</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Twitter</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Facebook</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="col mb-3">
+        <h5>Contato</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="mailto:email@merendapp.com.br"
+              class="nav-link p-0 text-body-secondary">email@merendapp.com.br</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">+55 11 99999-9999</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Rua dos Bobos N 0</a></li>
+
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="script.js"></script>
+<script src="form.js"></script>
 </html>
