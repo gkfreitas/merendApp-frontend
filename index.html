@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="form.css" />
-    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -261,6 +261,7 @@
                     id="nome"
                     name="nome"
                     placeholder="Nome"
+                    pattern="^[A-ZÁÉÍÓÚÂÊÎÔÛÃÕÀÇ][a-záéíóúâêîôûãõàç]+(?: [A-ZÁÉÍÓÚÂÊÎÔÛÃÕÀÇ][a-záéíóúâêîôûãõàç]+)+$"
                     required
                   />
                   <div class="valid-feedback">Tudo certo!</div>
@@ -442,6 +443,6 @@
       </footer>
     </div>
   </body>
-  <script src="script.js"></script>
-  <script src="form.js"></script>
+  <script src="./js/form.js"></script>
+  <script src="./js/script.js"></script>
 </html>
