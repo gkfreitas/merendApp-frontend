@@ -37,11 +37,19 @@
             <li>
               <a onclick="goToSection('contact')" href="#contact">Contato</a>
             </li>
-             <li>
-              <a target="_blank" href="https://www.youtube.com/watch?v=sfiIedQt_A8">Video</a>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=sfiIedQt_A8"
+                >Video</a
+              >
             </li>
-             <li>
-              <a target="_blank" href="https://www.youtube.com/watch?v=sfiIedQt_A8">Video</a>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=sfiIedQt_A8"
+                >Video</a
+              >
             </li>
           </ul>
         </nav>
@@ -62,7 +70,7 @@
             <div class="home-card-info home-card">
               <div class="home-card-info-data">
                 <img
-                  src="/images/apple-icon.svg"
+                  src="./images/apple-icon.svg"
                   alt="Icone de uma maça com fundo verde"
                 />
                 <p>55K+</p>
@@ -78,7 +86,7 @@
             <div class="home-card-info home-card">
               <div class="home-card-info-data">
                 <img
-                  src="/images/dashboard-asg-icon.svg"
+                  src="./images/dashboard-asg-icon.svg"
                   alt="Icone de uma maça com fundo verde"
                 />
                 <p>20%</p>
@@ -107,7 +115,7 @@
                 >
                   Veja como funciona
                   <img
-                    src="/images/up-right-arrow.svg"
+                    src="./images/up-right-arrow.svg"
                     alt="Icone de uma seta para cima"
                   />
                 </button>
@@ -117,7 +125,7 @@
                 >
                   Teste agora
                   <img
-                    src="/images/arrow-right.svg"
+                    src="./images/arrow-right.svg"
                     alt="Icone de uma seta para a direita"
                   />
                 </button>
@@ -129,7 +137,7 @@
       </section>
       <section id="about-us">
         <div class="about-us-container">
-          <img src="/images/big-logo.png" alt="Logo da merendApp grande" />
+          <img src="./images/big-logo.png" alt="Logo da merendApp grande" />
           <div class="about-us-info-container">
             <h2>Sobre nós</h2>
             <p>
@@ -147,7 +155,7 @@
             <div class="about-us-info-with-icon-container">
               <div>
                 <div class="about-us-icon-with-text">
-                  <img src="/images/leaf.svg" alt="" />
+                  <img src="./images/leaf.svg" alt="" />
                   <p>
                     Desenvolvido para <br />
                     o máximo Impacto
@@ -160,7 +168,7 @@
               </div>
               <div>
                 <div class="about-us-icon-with-text">
-                  <img src="/images/many-leafs.svg" alt="" />
+                  <img src="./images/many-leafs.svg" alt="" />
                   <p>
                     Eficiência em cada <br />
                     etapa
@@ -187,21 +195,21 @@
         <div class="about-us-container-cards-wrapper">
           <div class="about-us-container-cards">
             <div class="d-flex align-items-center gap-2">
-              <img src="/images/leaf.svg" alt="" />
+              <img src="./images/leaf.svg" alt="" />
               <p>55K+</p>
             </div>
             <span>Produtos monitorados com critérios nutricionais</span>
           </div>
           <div class="about-us-container-cards">
             <div class="d-flex align-items-center gap-2">
-              <img src="/images/leaf2-icon.svg" alt="" />
+              <img src="./images/leaf2-icon.svg" alt="" />
               <p>86+</p>
             </div>
             <span>Fornecedores parceiros aprovados</span>
           </div>
           <div class="about-us-container-cards">
             <div class="d-flex align-items-center gap-2">
-              <img src="/images/eco-icon.svg" alt="" />
+              <img src="./images/eco-icon.svg" alt="" />
               <p>4.9<span>/5</span></p>
             </div>
             <span>Avaliação média de satisfação das instituições</span>
@@ -210,19 +218,19 @@
         <h3 class="company-title">Quem confia no MerendApp</h3>
         <div class="companies-container">
           <div class="company-card">
-            <img src="/images/company1.png" alt="" />
+            <img src="./images/company1.png" alt="" />
           </div>
           <div class="company-card">
-            <img src="/images/company2.png" alt="" />
+            <img src="./images/company2.png" alt="" />
           </div>
           <div class="company-card">
-            <img src="/images/company3.png" alt="" />
+            <img src="./images/company3.png" alt="" />
           </div>
           <div class="company-card">
-            <img src="/images/company4.png" alt="" />
+            <img src="./images/company4.png" alt="" />
           </div>
           <div class="company-card">
-            <img src="/images/company5.png" alt="" />
+            <img src="./images/company5.png" alt="" />
           </div>
         </div>
         <p class="company-subtitle">Venha fazer parte do time MerendApp</p>
@@ -243,67 +251,96 @@
           </div>
 
           <div class="form-box">
-            <form class="form">
+            <form class="form needs-validation" novalidate>
               <div class="form-fields">
                 <div class="form-group">
-                  <label for="nome">Nome completo</label>
+                  <label for="nome" class="form-label">Nome completo</label>
                   <input
                     type="text"
+                    class="form-control"
                     id="nome"
                     name="nome"
                     placeholder="Nome"
                     required
                   />
+                  <div class="valid-feedback">Tudo certo!</div>
+                  <div class="invalid-feedback">
+                    Por favor, insira seu nome completo.
+                  </div>
                 </div>
+
                 <div class="form-group">
-                  <label for="email">Email profissional</label>
+                  <label for="email" class="form-label"
+                    >Email profissional</label
+                  >
                   <input
                     type="email"
+                    class="form-control"
                     id="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder="exemplo@empresa.com"
                     required
                   />
+                  <div class="valid-feedback">Email válido.</div>
+                  <div class="invalid-feedback">
+                    Por favor, insira um email válido.
+                  </div>
                 </div>
                 <div class="form-group">
-                  <label for="telefone">Telefone</label>
+                  <label for="telefone" class="form-label">Telefone</label>
                   <input
                     type="tel"
+                    class="form-control"
                     id="telefone"
                     name="telefone"
-                    placeholder="Telefone"
+                    placeholder="(11) 99999-9999"
+                    inputmode="numeric"
+                    pattern="[0-9]{10,11}"
                     required
                   />
+                  <div class="valid-feedback">Telefone válido.</div>
+                  <div class="invalid-feedback">
+                    Digite um telefone válido com DDD.
+                  </div>
                 </div>
                 <div class="form-group">
-                  <label for="empresa">Empresa</label>
+                  <label for="empresa" class="form-label">Empresa</label>
                   <input
                     type="text"
+                    class="form-control"
                     id="empresa"
                     name="empresa"
-                    placeholder="Empresa"
+                    placeholder="Nome da empresa"
                     required
                   />
+                  <div class="valid-feedback">Nome da empresa válido.</div>
+
+                  <div class="invalid-feedback">Digite o nome da empresa.</div>
                 </div>
                 <div class="form-group">
-                  <label for="tipo">Tipo de empresa</label>
-                  <select id="tipo" name="tipo" required>
-                    <option value="" id="company-type" disabled selected>
-                      Tipo de empresa
-                    </option>
+                  <label for="tipo" class="form-label">Tipo de empresa</label>
+                  <select class="form-select" id="tipo" name="tipo" required>
+                    <option value="" disabled selected>Selecione o tipo</option>
                     <option value="escola">Escola</option>
                     <option value="distribuidor">Distribuidor</option>
                   </select>
+                  <div class="valid-feedback">Tipo selecionado.</div>
+                  <div class="invalid-feedback">Escolha o tipo de empresa.</div>
                 </div>
                 <div class="form-group">
-                  <label for="mensagem">Mensagem</label>
+                  <label for="mensagem" class="form-label">Mensagem</label>
                   <textarea
+                    class="form-control"
                     id="mensagem"
                     name="mensagem"
                     placeholder="Digite sua mensagem aqui..."
                     rows="4"
                     required
                   ></textarea>
+                  <div class="valid-feedback">Mensagem válida.</div>
+                  <div class="invalid-feedback">
+                    Por favor, escreva sua mensagem.
+                  </div>
                 </div>
               </div>
 
@@ -356,7 +393,8 @@
             <li class="nav-item mb-2">
               <a
                 class="nav-link p-0 text-body-secondary"
-                target="_blank" href="https://www.youtube.com/watch?v=sfiIedQt_A8"
+                target="_blank"
+                href="https://www.youtube.com/watch?v=sfiIedQt_A8"
                 >Video</a
               >
             </li>
