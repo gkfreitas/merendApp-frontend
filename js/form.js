@@ -5,6 +5,7 @@ const modalBody = document.getElementById("customModalBody");
 
 form.addEventListener("submit", function (event) {
   if (!form.checkValidity()) {
+    form.classList.add("was-validated");
     event.preventDefault();
     event.stopPropagation();
   } else {
@@ -16,7 +17,7 @@ form.addEventListener("submit", function (event) {
     const empresa = document.getElementById("empresa").value.trim();
     const tipo = document.getElementById("tipo").value;
     const message = document.getElementById("mensagem").value.trim();
-
+    
     modalBody.innerHTML = `
       <p><strong>Nome:</strong> ${nome}</p>
       <p><strong>Email:</strong> ${email}</p>
@@ -29,10 +30,10 @@ form.addEventListener("submit", function (event) {
 
     modal.style.display = "block";
     form.reset();
+    form.classList.add("needs-validation");
     form.classList.remove("was-validated");
   }
 
-  form.classList.add("was-validated");
 });
 
 closeBtn.addEventListener("click", function () {
