@@ -1,7 +1,7 @@
-import React, { useRef, useState } from "react";
-import './App.css'
+import React, { useRef, useState, forwardRef } from "react";
+import './App.css';
 
-export default function ContactForm() {
+const ContactForm = forwardRef((props, ref) => {
   const formRef = useRef(null);
   const [validated, setValidated] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -34,7 +34,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="form-section" id="contact">
+    <div className="form-section" id="contact" ref={ref}>
       <div className="form-container">
         <div className="form-header">
           <div className="form-title">
@@ -66,7 +66,7 @@ export default function ContactForm() {
                   id="nome"
                   name="nome"
                   placeholder="Nome"
-                  pattern="^[A-ZÁÉÍÓÚÂÊÎÔÛÃÕÀÇ][a-záéíóúâêîôûãõàç]+(?: [A-ZÁÉÍÓÚÂÊÎÔÛÃÕÀÇ][a-záéíóúâêîôûãõàç]+)+$"
+                  pattern="^[A-ZÁÉÍÓÚÂÊÎÔÛÃÕÀÇ][a-záéíóúâêîôûãõàç]+(?: [A-Za-zÁÉÍÓÚÂÊÎÔÛÃÕÀÇáéíóúâêîôûãõàç]+)+$"
                   required
                 />
                 <div className="valid-feedback">Tudo certo!</div>
@@ -184,7 +184,6 @@ export default function ContactForm() {
         </div>
       </div>
 
-      {/* Modal Bootstrap Simulado com React */}
       {showModal && (
         <div
           className="modal fade show"
@@ -201,24 +200,12 @@ export default function ContactForm() {
                 ></button>
               </div>
               <div className="modal-body">
-                <p>
-                  <strong>Nome:</strong> {formData.nome}
-                </p>
-                <p>
-                  <strong>Email:</strong> {formData.email}
-                </p>
-                <p>
-                  <strong>Telefone:</strong> {formData.telefone}
-                </p>
-                <p>
-                  <strong>Empresa:</strong> {formData.empresa}
-                </p>
-                <p>
-                  <strong>Tipo:</strong> {formData.tipo}
-                </p>
-                <p>
-                  <strong>Mensagem:</strong> {formData.mensagem}
-                </p>
+                <p><strong>Nome:</strong> {formData.nome}</p>
+                <p><strong>Email:</strong> {formData.email}</p>
+                <p><strong>Telefone:</strong> {formData.telefone}</p>
+                <p><strong>Empresa:</strong> {formData.empresa}</p>
+                <p><strong>Tipo:</strong> {formData.tipo}</p>
+                <p><strong>Mensagem:</strong> {formData.mensagem}</p>
               </div>
               <div className="modal-footer">
                 <button
@@ -235,4 +222,6 @@ export default function ContactForm() {
       )}
     </div>
   );
-}
+});
+
+export default ContactForm;

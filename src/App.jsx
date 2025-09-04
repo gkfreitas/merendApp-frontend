@@ -21,6 +21,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 import ContactForm from "./ContactForm";
+import FAQ from "./FAQ";
+import Testimonials from "./Testimonials";
 
 export default function App() {
   const contactRef = useRef(null);
@@ -250,10 +252,13 @@ export default function App() {
               <img src={company5} alt="5" />
             </div>
           </div>
+
+          <Testimonials/>
           <p className="company-subtitle">Venha fazer parte do time MerendApp</p>
         </section>
 
-        <ContactForm/>
+        <ContactForm ref={contactRef} />
+        <FAQ />
       </main>
 
       <div id="customModal" className="custom-modal">
