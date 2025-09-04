@@ -30,57 +30,20 @@ export default function Testimonials() {
             Veja o que nossos usuários dizem sobre o MerendApp
           </p>
         </div>
-
-        <div
-          id="testimonialsCarousel"
-          className="carousel slide"
-          data-bs-ride="carousel"
-          data-bs-interval="4000"
-        >
-          <div className="carousel-inner">
-            {testimonials.map((t, index) => (
-              <div
-                key={index}
-                className={`carousel-item ${index === 0 ? "active" : ""}`}
-              >
-                <div className="d-flex justify-content-center">
-                  <div className="card shadow-sm border-0 rounded-4 w-75">
-                    <div className="card-body text-center">
-                      <p className="card-text fs-5 fst-italic">“{t.text}”</p>
-                      <h6 className="mt-4 mb-0 fw-bold">{t.name}</h6>
-                      <small className="text-muted">{t.role}</small>
-                    </div>
+        <div className="row g-4">
+          {testimonials.map((t, index) => (
+            <div key={index} className="col-md-4">
+              <div className="card h-100 shadow-sm border-0 rounded-4">
+                <div className="card-body d-flex flex-column">
+                  <p className="card-text mb-4">“{t.text}”</p>
+                  <div className="mt-auto">
+                    <h6 className="mb-0 fw-bold">{t.name}</h6>
+                    <small className="text-muted">{t.role}</small>
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
-
-          {/* Controles */}
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#testimonialsCarousel"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Anterior</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#testimonialsCarousel"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Próximo</span>
-          </button>
+            </div>
+          ))}
         </div>
       </div>
     </section>
