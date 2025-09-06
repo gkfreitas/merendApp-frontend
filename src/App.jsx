@@ -56,7 +56,7 @@ export default function App() {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.youtube.com/watch?v=MXUZo4ZfOnc&ab_channel=MerendApp"
+                  href="https://www.youtube.com/watch?v=Q4WVkGxD1XA"
                 >
                   Video
                 </a>
